@@ -1,6 +1,6 @@
 
 import './App.css';
-import hunter_down_sheet from './images/hunter_down_walk.png'
+import hunter_down_sheet from './images/hunter_down.png'
 
 function App() {
   return (

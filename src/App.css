@@ -12,7 +12,7 @@
 #hunter{
   width: calc(32px * var(--pixel-size));
   height: calc(32px * var(--pixel-size));
-  background: #61fb9c;
+  
   overflow: hidden;
   
 
