@@ -1,19 +1,26 @@
 :root{
-  --pixel-size: 6;
+  --pixel-size: 2;
 }
 
 #viewport{
-  width: 500px;
-  height: 500px;
-  margin-left: calc(50vw - 250px);
+  width: 100vw;
+  height: 100vh;
+  
   border: solid red 1px;
+
+  overflow: hidden;
 }
 
 #hunter{
+  position: absolute;
+  left: calc(244px * var(--pixel-size));
+  z-index: 33;
+  top: calc(190px * var(--pixel-size));
+  
   width: calc(32px * var(--pixel-size));
   height: calc(32px * var(--pixel-size));
   
-  overflow: hidden;
+ overflow: hidden;
   
 
 }
@@ -21,7 +28,8 @@
 .hd_sheet{
   width: calc(128px * var(--pixel-size));
   height: calc(128px * var(--pixel-size));
-  animation: hunterMovesDown 1s steps(4) infinite;
+ /* animation: hunterMovesDown 0.8s steps(4) infinite;*/
+  animation: hunterMovesDown 0.6s steps(4) infinite;
 }
 
 @keyframes hunterMovesDown{
@@ -38,4 +46,141 @@
   image-rendering: pixelated;
 }
 
+#bonsai-img{
+  position: absolute;
+  left: calc( -27px  * var(--pixel-size));
+/* margin-left:-40px;*/
 
+  width: calc(480px * var(--pixel-size));
+  height: calc(360px * var(--pixel-size));
+}
+
+.flowerpot{
+  position: absolute;
+  z-index: 9;
+  width: calc(32px * var(--pixel-size));
+  height: calc(32px * var(--pixel-size));
+  overflow: hidden;
+}
+
+#fp-one{
+  left: calc(220px * var(--pixel-size));
+  top: calc(90px * var(--pixel-size));
+
+}
+
+
+#fp-two{
+  left: calc(170px * var(--pixel-size));
+  top: calc(60px * var(--pixel-size));
+
+}
+
+#fp-three{
+  left: calc(160px * var(--pixel-size));
+  top: calc(100px * var(--pixel-size));
+
+}
+
+#fp-four{
+  left: calc(90px * var(--pixel-size));
+  top: calc(60px * var(--pixel-size));
+
+}
+
+#fp-five{
+  left: calc(30px * var(--pixel-size));
+  top: calc(90px * var(--pixel-size));
+
+}
+
+#fp-six{
+  left: calc(280px * var(--pixel-size));
+  top: calc(90px * var(--pixel-size));
+
+}
+
+#fp-seven{
+  left: calc(70px * var(--pixel-size));
+  top: calc(120px * var(--pixel-size));
+
+}
+
+#fp-eight{
+  left: calc(120px * var(--pixel-size));
+  top: calc(110px * var(--pixel-size));
+
+}
+
+#fp-nine{
+  left: calc(100px * var(--pixel-size));
+  top: calc(80px * var(--pixel-size));
+
+}
+
+#fp-ten{
+  left: calc(146px * var(--pixel-size));
+  top: calc(44px * var(--pixel-size));
+
+}
+
+#fp-eleven{
+  left: calc(300px * var(--pixel-size));
+  top: calc(130px * var(--pixel-size));
+
+}
+
+#fp-twelve{
+  left: calc(220px * var(--pixel-size));
+  top: calc(60px * var(--pixel-size));
+
+}
+
+.bloomin_sheet{
+  width: calc(288px * var(--pixel-size));
+  height: calc(32px * var(--pixel-size));
+ /* animation: bloom 1.2s steps(9) infinite;*/
+
+}
+
+.blooming{
+  animation: bloom 1s steps(9);
+}
+
+.bloomed{
+  transform: translate3d(-89%, 0, 0);
+}
+
+.buded{
+
+}
+
+@keyframes bloom {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+#logo-shine{
+  height: calc(64px * var(--pixel-size));
+  width: calc(64px * var(--pixel-size));
+  overflow: hidden;
+}
+#logo-shine-sheet{
+  width: calc(768px * var(--pixel-size));
+  height: calc(64px * var(--pixel-size));
+  animation: shine 0.8s steps(12) infinite;
+}
+
+
+@keyframes shine{
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
