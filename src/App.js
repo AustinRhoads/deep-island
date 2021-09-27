@@ -2,9 +2,9 @@
 import './App.css';
 import React from 'react';
 import hunter_down_sheet from './images/hunter_down.png'
-import bonsai from './images/bonsai_test.png'
+import bonsai from './images/bonsai_home.png'
 import blooming from './images/bloominfukian.png'
-import ar_logo_shine from './images/ar_logo_shine_one.png'
+import ar_logo_shine from './images/logo_shine_two_electric_boogaloo.png'
 
 
 function App() {
