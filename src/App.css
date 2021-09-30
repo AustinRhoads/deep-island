@@ -172,7 +172,11 @@
 #logo-shine-sheet{
   width: calc(768px * var(--pixel-size));
   height: calc(64px * var(--pixel-size));
-  animation: shine 0.8s steps(12) infinite;
+ /* animation: shine 0.7s steps(12) infinite;*/
+}
+
+.shine{
+  animation: shine 0.7s steps(12);
 }
 
 

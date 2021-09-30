@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import hunter_down_sheet from './images/hunter_down.png'
-import bonsai from './images/bonsai_home.png'
+import bonsai from './images/bonsai_home_3.png'
 import blooming from './images/bloominfukian.png'
 import ar_logo_shine from './images/logo_shine_two_electric_boogaloo.png'
 
@@ -25,6 +25,23 @@ function startBlooming(e){
     }, 1000)
   
 }
+
+function randomShine(){
+  setTimeout(()=>{
+    let logo = document.getElementById('logo-shine-sheet');
+    if(logo){
+      logo.classList.add('shine');
+      setTimeout(()=>{
+          logo.classList.remove('shine');
+          randomShine();
+      }, 700)
+    }
+    
+  }, Math.floor(Math.random() * (8000 - 900) + 900))
+
+
+}
+randomShine();
 
 
 
