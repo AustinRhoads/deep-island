@@ -5,7 +5,7 @@ import hunter_down_sheet from './images/hunter_down.png'
 import bonsai from './images/bonsai_home_3.png'
 import blooming from './images/bloominfukian.png'
 import ar_logo_shine from './images/logo_shine_two_electric_boogaloo.png'
-
+import robot_sheet from './images/robot_idle_sheet.png'
 
 function App() {
 
@@ -49,6 +49,12 @@ randomShine();
     <div className="App" >
       <div id="viewport">
         <img id="bonsai-img" className="pixelart" alt="" src={bonsai} />
+
+        <div id="robot">
+          <img id="robot-sprite-sheet" className="pixelart" alt="" src={robot_sheet} />
+          
+        </div>
+
         <div id="hunter">
             <img className="hd_sheet pixelart" alt="" src={hunter_down_sheet} />
         </div>
