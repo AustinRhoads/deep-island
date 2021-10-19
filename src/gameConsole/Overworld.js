@@ -8,7 +8,7 @@ useEffect(() => {
 
     return(
         <div id="game-container">
-            <canvas className="game-canvas" style={{width: 352, height: 198}}></canvas>
+            <canvas className="game-canvas" style={{width: 198, height: 352}}></canvas>
         </div>
     )
 };
